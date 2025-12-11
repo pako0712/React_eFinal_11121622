@@ -1,0 +1,24 @@
+// 🎨 Paleta de colores personalizada
+$primary: #4b7bec;
+$secondary: #778ca3;
+$success: #20bf6b;
+$danger: #eb3b5a;
+$warning: #f7b731;
+$dark: #1e272e;
+$light: #d2dae2;
+
+// 🅱️ Sobrescribir variables de Bootstrap al importarlo
+@use "bootstrap" with (
+  $primary: $primary,
+  $secondary: $secondary,
+  $success: $success,
+  $danger: $danger,
+  $warning: $warning,
+  $dark: $dark,
+  $light: $light,
+  $font-family-base: "Poppins, sans-serif",
+  $border-radius: 0.4rem
+);
+
+// Opcional: tus variables adicionales se pueden declarar después
+
